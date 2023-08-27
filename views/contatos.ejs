@@ -1,0 +1,52 @@
+<%- include('partials/header') %>
+<%- include('partials/navbar') %>
+
+<div class="container-fluid mt-1 mx-auto bg-light">
+  <div class="row d-flex justify-content-center">
+      <div class="col-xl-8 col-lg-9 col-md-10 col-11 text-center mb-1">
+          <h3>Entre em contato conosco</h3>
+          <p class="blue-text">Preencha o formulário abaixo e faça sua Avaliação!</p>
+          <div class="card">
+              <h5 class="text-center mb-4">Pizzaria Supreme</h5>
+              <form class="form-card ms-1 me-1">
+                  <div class="row justify-content-between text-left">
+                      <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Primeiro Nome<span class="text-danger"> *</span></label> <input type="text" id="fname" name="fname" placeholder="Digite seu primeiro nome..."> </div>
+                      <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Último Nome<span class="text-danger"> *</span></label> <input type="text" id="lname" name="lname" placeholder="Digite seu último nome..."> </div>
+                  </div>
+                  <div class="row justify-content-between text-left">
+                      <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">E-mail<span class="text-danger"> *</span></label> <input type="text" id="email" name="email" placeholder="Digite seu e-mail..."> </div>
+                      <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Número de telefone<span class="text-danger"> *</span></label> <input type="number" id="mob" name="mob" placeholder="Digite seu número para contato..."> </div>
+                  </div>
+                  <div class="row justify-content-between text-left">
+                      <div class="form-group col-12 flex-column d-flex mt-3"> <label for="exampleFormControlTextarea1" class="form-label">Digite seu comentário:</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea></div>
+                  </div>
+                  <div class="row justify-content-center mt-3">
+                      <div class="form-group col-sm-6 mb-1"> <button type="button" class="btn btn-danger btn-sm">Enviar formulário</button>
+                   </div>
+                  </div>
+              </form>
+          </div>
+      </div>
+    </div>
+</div>
+
+<ul class="list-group mt-3">
+    <li class="list-group-item bg-light text-dark">Telefones para Contato:</li>
+    <li class="list-group-item"><i class="bi bi-whatsapp"></i> (99) 9 9999-9999</li>
+    <li class="list-group-item"><i class="bi bi-telephone-fill"></i> (99) 9 9999-9999</li>
+  </ul>
+
+<ul class="list-group mt-3">
+    <li class="list-group-item bg-light text-dark">Mídias Sociais:</li>
+    <li class="list-group-item"><i class="bi bi-instagram"></i> <a href="#" class=" text-decoration-none">@pizzaria.supreme</a></li>
+    <li class="list-group-item"><i class="bi bi-facebook"></i> <a href="#" class="text-decoration-none">facebook.com/pizzariasupreme</a></li>
+  </ul>
+
+<ul class="list-group mt-3">
+    <li class="list-group-item bg-light text-dark">Nossa Localização:</li>
+    <li class="list-group-item"><i class="bi bi-geo-alt-fill"></i> Rua X, Bairro Y, Número 0, Catalão-GO</li>
+  </ul>
+
+
+<%- include('partials/footer') %>

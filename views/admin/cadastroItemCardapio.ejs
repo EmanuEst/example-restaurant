@@ -1,0 +1,21 @@
+<%- include('../partials/header') %>
+<%- include('../partials/navbarAdm') %>
+
+<div class="container mt-3">
+    <hr>
+    <h3 class="text-center display-4">Formulário de Cadastro do Cardápio</h3>
+    <hr>
+    <form action="/cardapio/cadastro/save" method="post" enctype="multipart/form-data">
+        <label for="nome">Nome: </label>
+        <input type="text" class="form-control" name="nome">
+        <label for="descricao">Descrição: </label>
+        <textarea class="form-control" name="descricao"></textarea>
+        <label for="preco">Preço: </label>
+        <input type="number" class="form-control" name="preco">
+        <label for="image">Imagem: </label>
+        <input type="file" class="form-control" name="image">
+        <button type="submit" class="btn btn-dark mt-3">Salvar</button>
+    </form>
+</div>
+
+<%- include('../partials/footer') %>
